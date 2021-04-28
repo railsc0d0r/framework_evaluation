@@ -1,0 +1,67 @@
+{
+  "name": "framework_evaluation",
+  "version": "1.0.0",
+  "description": "A project to evaluate emberjs, angular2 and meteor for further use in webdev.",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jasmine",
+    "test-debug": "NODE_ENV=test node debug ./node_modules/.bin/jasmine",
+    "generate_docs": "jsdoc -c jsdoc.conf.json -d ./docs/ -R ./README.md -r server/",
+    "generate_cov_report": "NODE_ENV=test ./node_modules/.bin/istanbul cover --include-all-sources -x specs/** --root server ./node_modules/.bin/jasmine",
+    "seed": "NODE_ENV=development ./seed.js",
+    "start": "NODE_ENV=development ./server.js",
+    "start-debug": "NODE_ENV=development node debug ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@p2501.twilightparadox.com:33333/framework_evaluation.git"
+  },
+  "keywords": [
+    "evaluation",
+    "frameworks",
+    "emberjs",
+    "angular2",
+    "meteor",
+    "handsontable"
+  ],
+  "author": "Stephan Barth",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "coffee-script": "^1.12.4",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "is-valid-json": "^1.0.2",
+    "lodash": "^4.17.4",
+    "lokijs": "^1.4.3",
+    "nodejs-model": "^0.1.6"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-es2016": "^6.22.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.1.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.1.2",
+    "jasmine": "^2.5.3",
+    "jasmine-spec-reporter": "^3.2.0",
+    "jsdoc": "^3.4.3",
+    "karma": "^1.5.0",
+    "karma-browserify": "^5.1.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "rimraf": "^2.6.1",
+    "supertest": "^3.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  }
+}
