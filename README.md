@@ -28,7 +28,7 @@ Installing
 Clone the repository:
 
 ```bash
-git clone git@gitlab.4com.de:stephan.barth/framework_evaluation.git
+git clone git@github.com:railsc0d0r/framework_evaluation.git
 ```
 
 and install the dependencies:
